@@ -2,7 +2,7 @@ function insertionSort(arr) {
     let current, preindex
     for (let i = 1; i < arr.length; i++) {
         preindex = i - 1
-        current = arr[i]
+        current = arr[i] //记住要移动的数
         while (preindex >= 0 && arr[preindex] > current) {
             arr[preindex + 1] = arr[preindex]
             preindex--
