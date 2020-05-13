@@ -1,11 +1,14 @@
 function isOrder(arr) {
-    let is = true
+    // let is = true
     for (let i = 0; i < arr.length - 1; i++) {
         if (arr[i] > arr[i + 1]) {
-            is = false
+            return false
+            // is = false
+            // break
         }
     }
-    return is
+    // return is
+    return true
 }
 function randomSort(arr) {
     let temp, x
@@ -26,4 +29,4 @@ function monkeySort(arr) {
     }
     return arr
 }
-monkeySort([1, 5, 3, 6])
+monkeySort([1, 5, 3, 6, 9, 4, 2, 7])
