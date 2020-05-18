@@ -6,8 +6,7 @@ function sleepSort(arr) {
     for (let i = 0; i < arr.length; i++) {
         setTimeout(() => {
             console.log(`第${i}个人醒了，他分配的数字是${arr[i]}`)
-            number = arr[i]
-            list.push(number)
+            list.push(arr[i])
         }, arr[i])
     }
     setTimeout(() => {
